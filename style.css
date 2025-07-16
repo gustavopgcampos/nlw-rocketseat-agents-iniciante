@@ -1,0 +1,35 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-image: url(./assets/bg.png);
+    background-repeat: no-repeat;
+    background-image: 100% auto;
+    background-position: top center;
+    background-color: #121214;
+    background-size: cover;
+    color: white;
+}
+
+body * {
+    font-family: "Inter";
+    line-height: 160%;
+}
+
+header {
+    padding-top: 32px;
+    text-align: center;
+}
+
+header img {
+    width: 15rem;
+}
+
+main {
+    max-width: 32rem;
+    width: 90%;
+    margin: 3rem auto;
+}
