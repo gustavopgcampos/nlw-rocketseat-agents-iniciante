@@ -21,8 +21,36 @@
 
     <main>
         <section>
-            <h2>Assistente de meta</h2>
-            <p>Pergunte sobre estratégias, builds e dicas para seus jogos</p>
+
+            <div class="tittleandparagraph">
+                <h2>Assistente de meta</h2>
+                <p>Pergunte sobre estratégias, builds e dicas para seus jogos</p>
+
+                <div class="form">
+                    <form>
+                        <input type="password" placeholder="Informe a API KEY do Gemini" required>
+
+                        <select>
+                            <option value="">Selecione um jogo</option>
+                            <option value="valorant">Valorant</option>
+                            <option value="lol">League of Legends</option>
+                            <option value="cs">Counter Strike</option>
+                            <option value="minecraft">Minecraft</option>
+                        </select>
+
+                        <input type="text" placeholder="Ex: Farm de ferro minecraft 1.21.7" required>
+
+                        <button type="submit">Perguntar</button>
+                    </form>
+
+                    <div id="aiResponse">
+                        <div class="reponse-content">
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+
         </section>
     </main>
 
