@@ -27,10 +27,10 @@
                 <p>Pergunte sobre estratégias, builds e dicas para seus jogos</p>
 
                 <div class="form">
-                    <form>
-                        <input type="password" placeholder="Informe a API KEY do Gemini" required>
+                    <form id="form">
+                        <input id="apiKey" type="password" placeholder="Informe a API KEY do Gemini" required>
 
-                        <select>
+                        <select id="gameSelect">
                             <option value="">Selecione um jogo</option>
                             <option value="valorant">Valorant</option>
                             <option value="lol">League of Legends</option>
@@ -38,9 +38,9 @@
                             <option value="minecraft">Minecraft</option>
                         </select>
 
-                        <input type="text" placeholder="Ex: Farm de ferro minecraft 1.21.7" required>
+                        <input id="questionInput" type="text" placeholder="Ex: Farm de ferro minecraft 1.21.7" required>
 
-                        <button type="submit">Perguntar</button>
+                        <button id="askButton" type="submit">Perguntar</button>
                     </form>
 
                     <div id="aiResponse">
@@ -54,8 +54,8 @@
         </section>
     </main>
 
-</body>
 
-<script src="./script.js"></script>
+    <script src="./script.js"></script>
+</body>
 
 </html>
