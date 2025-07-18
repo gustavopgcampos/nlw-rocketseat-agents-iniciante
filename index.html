@@ -28,23 +28,24 @@
 
                 <div class="form">
                     <form id="form">
-                        <input id="apiKey" type="password" placeholder="Informe a API KEY do Gemini" required>
+                        <input id="apiKey" type="password" placeholder="Informe a API KEY do Gemini * " required>
 
                         <select id="gameSelect">
-                            <option value="">Selecione um jogo</option>
+                            <option value="">Selecione um jogo * </option>
                             <option value="valorant">Valorant</option>
                             <option value="lol">League of Legends</option>
                             <option value="cs">Counter Strike</option>
                             <option value="minecraft">Minecraft</option>
                         </select>
 
-                        <input id="questionInput" type="text" placeholder="Ex: Farm de ferro minecraft 1.21.7" required>
+                        <input id="questionInput" type="text" placeholder="Ex: Farm de ferro minecraft 1.21.7 * "
+                            required>
 
                         <button id="askButton" type="submit">Perguntar</button>
                     </form>
 
-                    <div id="aiResponse">
-                        <div class="reponse-content">
+                    <div id="aiResponse" class="hide">
+                        <div class="response-content">
 
                         </div>
                     </div>
@@ -54,7 +55,7 @@
         </section>
     </main>
 
-
+    <script src="  https://unpkg.com/showdown/dist/showdown.min.js"></script>
     <script src="./script.js"></script>
 </body>
 

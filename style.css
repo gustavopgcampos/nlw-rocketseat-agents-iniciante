@@ -15,7 +15,7 @@ body {
 }
 
 body * {
-    font-family: "Inter";
+    font-family: 'Inter', sans-serif;
     line-height: 160%;
 }
 
@@ -103,6 +103,22 @@ form {
     transition: all 0.3s;
 }
 
+#aiResponse {
+    background: rgba(0, 0, 0, 0.4);
+    border-radius: 0.5rem;
+    padding: 1.25rem;
+    border-left: 4px solid #43e7ad;
+}
+
+#aiResponse p {
+    color: rgba(255, 255, 255, 255);
+}
+
+#aiResponse ul {
+    padding-left: 1.5rem;
+    opacity: 0.8;
+}
+
 button:hover {
     cursor: pointer;
     transform: translateY(-2px);
@@ -114,4 +130,26 @@ button:hover {
         opacity: 1;
         transform: translateY(0);
     }
+}
+
+button:disabled {
+    transform: initial;
+    animation: initial;
+    box-shadow: initial;
+    cursor: not-allowed;
+    color: black;
+}
+
+@keyframes pulse {
+    50% {
+        opacity: 0.4;
+    }
+}
+
+button:disabled.loading {
+    animation: pulse 1s infinite;
+}
+
+.hide {
+    display: none;
 }
